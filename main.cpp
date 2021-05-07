@@ -57,7 +57,7 @@ private:
     };
     const unsigned int _get_size_for_str() {
         unsigned int i(0);
-        while(this->saver[i])
+        while(this->saver[i]) //my thought, if value not appended a null byte then it will loops infinity
             ++i;
         return i;
     };
